@@ -1,0 +1,18 @@
+﻿
+
+div.center{
+    width: 100px;
+    height: 100px;
+    background-color: bisque;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.reset{
+     width: 200px;
+    height: 30px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}

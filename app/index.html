@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+      <script src="libs/polyfill.js"></script>
+        <script src="libs/system.js"></script>
+        <script>
+        System.config({
+            packages: {        
+                js: {
+                    format: 'register',
+                    defaultExtension: 'js'
+                },
+            },
+            meta: {
+                'js/*': {format: 'cjs'} 
+            }
+        });
+                  
+         System.import('js/play.js')
+                     .then(null, console.error.bind(console));
+        </script>
+
+
+</head>
+<body>
+    <h1>TicTacToe</h1>
+    <table>
+        <!--1st row-->
+        <tr>
+            <td>
+                <div id="0" class="center">
+                </div>
+            </td>
+             <td>
+                <div id="1" class="center">
+                </div>
+            </td>
+             <td>
+                <div id="2" class="center">
+                </div>
+            </td>
+        </tr>
+        <!--2nd row-->
+        <tr>
+            <td>
+                <div id="3" class="center">
+                </div>
+            </td>
+             <td>
+                <div id="4" class="center">
+                </div>
+            </td>
+             <td>
+                <div id="5" class="center">
+                </div>
+            </td>
+        </tr>
+        <!--3rd row-->
+        <tr>
+             <td>
+                <div id="6" class="center">
+                </div>
+            </td>
+             <td>
+                <div id="7" class="center">
+                </div>
+            </td>
+             <td>
+                <div id="8" class="center">
+                </div>
+            </td>
+        </tr>
+    </table>
+    <button id="btnReset" class="reset">Reset</button>
+    <div id="dvGameOver">
+    </div>
+    
+</body>
+</html>
